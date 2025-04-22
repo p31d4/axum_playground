@@ -1,0 +1,15 @@
+[package]
+name = "query_param_path"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = {version = "1", features = ["full"]}
+# Serde
+serde = { version = "1", features = ["derive"] }
+# Axum
+axum = "0.8.3"
+
+[dev-dependencies]
+anyhow = "1"
+httpc-test = "0.1.10"
