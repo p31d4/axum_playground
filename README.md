@@ -17,7 +17,7 @@ or from the command line:
 curl http://127.0.0.1:3000/hello
 ```
 
-Use the following commands to kill the docker container:
+To stop the Docker container open a new terminal and type the following commands:
 ```
 docker ps
 docker stop <CONTAINER ID>
