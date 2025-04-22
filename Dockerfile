@@ -18,5 +18,6 @@ FROM alpine
 ARG PROJECT
 
 COPY --from=builder /axum_workdir/target/x86_64-unknown-linux-musl/release/${PROJECT} /${PROJECT}
+RUN mkdir /assets && echo "<h1>Fallback</h1>" >> /assets/index.html
 ENTRYPOINT ["/bin/sh"]
 EXPOSE 3000

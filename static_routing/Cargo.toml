@@ -1,0 +1,16 @@
+[package]
+name = "static_routing"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = {version = "1", features = ["full"]}
+# Serde
+serde = { version = "1", features = ["derive"] }
+# Axum
+axum = "0.8.3"
+tower-http = { version = "0.6", features = ["fs"] }
+
+[dev-dependencies]
+anyhow = "1"
+httpc-test = "0.1.10"
